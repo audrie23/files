@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   title: Kintone REST API
 servers:
-  - url: 'http://127.0.0.1:8080/secure'
+  - url: 'http://127.0.0.1:8080/unsecure'
 paths:
   /getCookies:
     get:
