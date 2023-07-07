@@ -1,0 +1,30 @@
+openapi: 3.0.1
+info:
+  description: Kintone REST API
+  version: 1.0.0
+  title: Kintone REST API
+servers:
+  - url: 'http://127.0.0.1:8080/secure'
+paths:
+  /getCookies:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+components:
+  securitySchemes:
+    apiTokenAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+    appId:
+      type: apiKey
+      in: header
+      name: X-APP-ID
+security:
+  - apiTokenAuth: []
+  - appId: []
