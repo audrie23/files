@@ -15,7 +15,7 @@ paths:
             text/plain:
               schema:
                 type: string
-   /getRequestHeaders:
+  /getRequestHeaders:
     get:
       responses:
         '200':
@@ -24,7 +24,7 @@ paths:
             text/plain:
               schema:
                 type: string
-   /getQueryParameters:
+  /getQueryParameters:
     get:
       responses:
         '200':
