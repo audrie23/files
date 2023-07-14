@@ -15,7 +15,16 @@ paths:
             text/plain:
               schema:
                 type: string
-  /getRequestHeaders:
+ /getAutoCookie:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+ /getRequestHeaders:
     get:
       responses:
         '200':
