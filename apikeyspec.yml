@@ -1,4 +1,4 @@
-openapi: 3.0.1
+ropenapi: 3.0.1
 info:
   description: Kintone REST API
   version: 1.0.0
@@ -15,10 +15,40 @@ paths:
             text/plain:
               schema:
                 type: string
-  /testPrecedence:
+  /testPrecedenceHeader:
     get:
       parameters:
         - in: header
+          name: API-KEY
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /testPrecedenceQuery:
+    get:
+      parameters:
+        - in: query
+          name: API-KEY
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /testPrecedenceCookie:
+    get:
+      parameters:
+        - in: cookie
           name: API-KEY
           schema:
             type: string
