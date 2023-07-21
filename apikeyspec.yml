@@ -15,6 +15,21 @@ paths:
             text/plain:
               schema:
                 type: string
+ /testPrecedence:
+    get:
+      parameters:
+        - in: header
+          name: API-KEY
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
   /getAutoCookie:
     get:
       responses:
