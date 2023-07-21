@@ -15,7 +15,7 @@ paths:
             text/plain:
               schema:
                 type: string
- /testPrecedence:
+  /testPrecedence:
     get:
       parameters:
         - in: header
